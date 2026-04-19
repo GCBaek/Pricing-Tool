@@ -276,7 +276,7 @@
   .copy-area {
     margin-top: 14px;
     width: 100%;
-    height: 96px;
+    height: 148px;
     background: var(--white);
     border: 1.5px solid var(--cream-dark);
     border-radius: 8px;
@@ -499,7 +499,7 @@ function calculate() {
     '상품명 : ' + (productName || '-'),
     '판매가 : ' + fmt(finalPrice),
     '수수료 : ' + Math.round(feeR * 100) + '%',
-  ].join('\n');
+  ].join('\n\n');
 
   document.getElementById('copyArea').value = lines;
   document.getElementById('copyBtn').classList.remove('copied');
